@@ -74,6 +74,7 @@ return {
 
    },
 //    Event change 
+
 changeType: function() {
 var fieldsInput = document.querySelectorAll(DOMstrings.inputType + ',' + DOMstrings.inputDescription + ',' + DOMstrings.inputValue);
 // энэ fieldsInput -дотор массив ирэхгүй харин nodeList-гэдэг юм ирдэг ба nodeList- дотор forEach-байдаггүй. 
@@ -81,8 +82,8 @@ var fieldsInput = document.querySelectorAll(DOMstrings.inputType + ',' + DOMstri
 nodeListForEach(fieldsInput, function(el) {
 el.classList.toggle('red-focus');
 });
+// 
 document.querySelector(DOMstrings.addBtn).classList.toggle('red');
-// window.location = 'https://www.youtube.com/watch?v=rhTl_OyehF8&list=RDXXYlFuWEuKI&index=26';
 
 },
 
